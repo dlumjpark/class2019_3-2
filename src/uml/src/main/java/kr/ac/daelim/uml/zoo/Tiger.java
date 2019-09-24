@@ -7,6 +7,16 @@ public class Tiger extends Animal{
 		cry = new TigerCry();
 		fly = new FlyNoWay();
 	}
+	
+	@Override
+	public void performCry() {
+		cry.cry();
+	}
+	
+	@Override
+	public void performFly() {
+		fly.fly();
+	}
 
 	@Override
 	public void display() {
